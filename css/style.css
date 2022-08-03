@@ -31,14 +31,25 @@ header nav ul div li a{
     font-size: 20px;
     font-weight: 900;
     padding: 30px
-    
+
     } 
+    
 
 header nav ul div{
     margin: 10px; /*Borrar*/
     display: flex;
     justify-content: space-evenly;
+
     
+}
+header nav ul div li a{
+    transition: 0.5s;
+}
+header nav ul div li a:hover{
+color: rgb(255, 174, 0);
+font-size: 21px;
+
+
 }
 /*------------main------------*/
 .titulos{
@@ -76,6 +87,10 @@ header nav ul div{
     background-color: white;
     padding: 5px;
     border-radius: 3px;
+
+}
+.hero div a:hover{
+    color: rgb(255, 174, 0);
 
 }
 
@@ -157,7 +172,11 @@ header nav ul div{
     background-color: white;
     color: grey;
     font-weight: 200;
+    transition: 0.7s;
 
+    }
+    .productos div div:hover{
+        transform: scale(1.05);
     }
 .productos div div a {
     text-decoration: none;
@@ -165,6 +184,9 @@ header nav ul div{
     color: white;
     padding: 5px;
     border-radius: 5px;   
+    }
+    .productos div div a:hover {
+        color: rgb(255, 174, 0);
     }
         
 
