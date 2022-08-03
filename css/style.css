@@ -120,6 +120,13 @@ header nav ul div{
     font-size: 60px;
     }
 
+    .categorias div{
+        transition: 1s;
+    }
+    .categorias div:hover{
+        transform: scale(1.03);
+    }
+
 .productos{
     width: 100%;
     background-color: gainsboro;
