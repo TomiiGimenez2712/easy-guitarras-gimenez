@@ -221,10 +221,17 @@ footer section{
 footer section a {
     color: white;
 }
-    footer section img{
-        width: 50px;
-        height: 50px;
-    }
+footer section a:hover{
+    color: rgb(255, 174, 0);
+}
+footer section img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+footer section img:hover{
+    transform: scale(1.1);
+}
 
 
 .main {background-color: gainsboro;
