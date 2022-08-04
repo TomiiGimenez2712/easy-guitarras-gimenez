@@ -223,8 +223,8 @@ footer section a:hover{
     color: rgb(255, 174, 0);
 }
 footer section img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     transition: 0.5s;
 }
 footer section img:hover{
@@ -249,7 +249,7 @@ color: black;}
     }
     .formulario{
     width: 320px;
-    height: 745px;
+    height: 610px;
     border: 1px solid white;
     margin: 10px;
     text-align: center;
@@ -351,12 +351,27 @@ color: black;}
         height: 600px;
         border: 1px transparent;
         border-radius: 5px;
+    }
+    .boton{
+        background-color: black;
+        color: white;
+    }
+    .boton:hover{
+        color: rgb(255, 174, 0);
 
     }
 
     /*------------main------------*/
 
     /*------------footer------------*/
+    .enviar{
+        background-color: gainsboro;
+        color: black;
+    }
+    .enviar:hover{
+        color: rgb(255, 174, 0);
+
+    }
 
 
     /*----------------Grids------------*/
