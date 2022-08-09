@@ -471,3 +471,21 @@ color: black;}
 
     }
 }
+@media screen and (max-width:490px) {
+    .galeria{
+        width: 95vw;
+        margin-right:2.5vw;
+        margin-left: 2.5vw;
+        
+
+    }
+}
+@media screen and (max-width:600px) {
+    .preguntas{
+        width: 95vw;
+        margin-right:2.5vw;
+        margin-left: 2.5vw;
+        
+
+    }
+}
