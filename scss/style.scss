@@ -20,16 +20,15 @@ body{
                         a{
                             color: rgb(255, 174, 0);
                             font-size: 20px;
+                            &:hover{
+                                color: rgb(255, 174, 0);
+                                font-size: 21px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-
-    #navbarNav ul li a:hover{
-        color: rgb(255, 174, 0);
-        font-size: 21px;
     }
 
                                                 /*------------main------------*/
@@ -59,19 +58,21 @@ body{
                 background-color: white;
                 padding: 5px;
                 border-radius: 3px;
+                &:hover{
+                    color: rgb(255, 174, 0);
+                }
             }
         }
     }
-    .hero div a:hover{
-        color: rgb(255, 174, 0);
-    }
-
 
     .categorias{
         width: 100%;
         background-color: black;
         div{
             transition: 1s;
+            &:hover{
+                transform: scale(1.03);
+            }
             a{
                 position: relative;
                 display: flex;
@@ -82,9 +83,6 @@ body{
                 font-size: 60px;
             }
         }
-    }
-    .categorias div:hover{
-        transform: scale(1.03);
     }
     .cat1{
         grid-area: cat1;
@@ -141,6 +139,9 @@ body{
                 color: grey;
                 font-weight: 200;
                 transition: 0.7s;
+                &:hover{
+                    transform: scale(1.05);
+                }
                 img{
                     height: 300px;}
                 h3{
@@ -152,19 +153,15 @@ body{
                     background-color: black;
                     color: white;
                     padding: 5px;
-                    border-radius: 5px;   
+                    border-radius: 5px; 
+                    &:hover {
+                        color: rgb(255, 174, 0);
+                    }
                 }
             }
         }
 
     }
-    .productos div div:hover{
-        transform: scale(1.05);
-    }
-    .productos div div a:hover {
-        color: rgb(255, 174, 0);
-    }
-    
                                             /*------------footer------------*/
     footer{
         display: flex;
@@ -176,25 +173,26 @@ body{
                 width: 60px;
                 height: 60px;
                 transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             a {
                 color: white;
+                &:hover{
+                    color: rgb(255, 174, 0);
+                }
             }
         }
     }
-    footer section img:hover{
-        transform: scale(1.1);
-    }
-    footer section a:hover{
-        color: rgb(255, 174, 0);
+
     }
     .enviar{
         background-color: gainsboro;
         color: black;
-    }
-    .enviar:hover{
-        color: rgb(255, 174, 0);
-
+        &:hover{
+            color: rgb(255, 174, 0);
+        }
     }
                                                 /*------------SERVICIOS------------*/
 
@@ -224,10 +222,9 @@ body{
     .boton{
         background-color: black;
         color: white;
-    }
-    .boton:hover{
-        color: rgb(255, 174, 0);
-
+        &:hover{
+            color: rgb(255, 174, 0);
+        }
     }
 
                                                 /*------------NOSOTROS------------*/
