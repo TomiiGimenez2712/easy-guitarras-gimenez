@@ -10,11 +10,7 @@ body {
   /*------------header------------*/
   /*------------main------------*/
   /*----------------Grids------------*/
-  /*------------footer------------*/
-  /*------------SERVICIOS------------*/
-  /*------------NOSOTROS------------*/
-  /*------------CONTACTOS------------*/
-  /*-------------Media Cueris---------------*/ }
+  /*------------footer------------*/ }
   body header img {
     width: 100%;
     height: 10vh; }
@@ -25,6 +21,9 @@ body {
     body header nav div ul li a {
       color: #ffae00;
       font-size: 20px; }
+      body header nav div ul li a:hover {
+        color: #ffae00;
+        font-size: 21px; }
   body #navbarNav ul li a:hover {
     color: #ffae00;
     font-size: 21px; }
@@ -51,13 +50,15 @@ body {
       background-color: white;
       padding: 5px;
       border-radius: 3px; }
-  body .hero div a:hover {
-    color: #ffae00; }
+      body .hero div a:hover {
+        color: #ffae00; }
   body .categorias {
     width: 100%;
     background-color: black; }
     body .categorias div {
       transition: 1s; }
+      body .categorias div:hover {
+        transform: scale(1.03); }
       body .categorias div a {
         position: relative;
         display: flex;
@@ -66,8 +67,6 @@ body {
         text-decoration: none;
         color: white;
         font-size: 60px; }
-  body .categorias div:hover {
-    transform: scale(1.03); }
   body .cat1 {
     grid-area: cat1;
     width: 100%;
@@ -115,6 +114,8 @@ body {
         color: grey;
         font-weight: 200;
         transition: 0.7s; }
+        body .productos > div div:hover {
+          transform: scale(1.05); }
         body .productos > div div img {
           height: 300px; }
         body .productos > div div h3 {
@@ -126,10 +127,8 @@ body {
           color: white;
           padding: 5px;
           border-radius: 5px; }
-  body .productos div div:hover {
-    transform: scale(1.05); }
-  body .productos div div a:hover {
-    color: #ffae00; }
+          body .productos > div div a:hover {
+            color: #ffae00; }
   body footer {
     display: flex;
     justify-content: space-around;
@@ -140,143 +139,179 @@ body {
         width: 60px;
         height: 60px;
         transition: 0.5s; }
+        body footer section img:hover {
+          transform: scale(1.1); }
       body footer section a {
         color: white; }
-  body footer section img:hover {
-    transform: scale(1.1); }
-  body footer section a:hover {
+        body footer section a:hover {
+          color: #ffae00; }
+
+.enviar {
+  background-color: gainsboro;
+  color: black; }
+  .enviar:hover {
     color: #ffae00; }
-  body .enviar {
-    background-color: gainsboro;
-    color: black; }
-  body .enviar:hover {
+
+/*------------SERVICIOS------------*/
+.form {
+  max-width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.datos {
+  width: 320px;
+  border: 1px solid white;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: 200; }
+
+.servicios img {
+  margin-top: 10px;
+  width: 320px;
+  height: 600px;
+  border: 1px transparent;
+  border-radius: 5px; }
+
+.boton {
+  background-color: black;
+  color: white; }
+  .boton:hover {
     color: #ffae00; }
-  body .form {
-    max-width: 100%;
-    display: flex;
-    justify-content: center; }
-  body .datos {
-    width: 320px;
-    border: 1px solid white;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 200; }
-  body .servicios img {
-    margin-top: 10px;
-    width: 320px;
-    height: 600px;
-    border: 1px transparent;
-    border-radius: 5px; }
-  body .boton {
-    background-color: black;
-    color: white; }
-  body .boton:hover {
-    color: #ffae00; }
-  body .nos {
-    display: flex;
-    justify-content: center; }
-  body .quienes-somos {
-    width: 320px;
-    height: 450px;
-    border: 1px solid white;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 200; }
-  body .nos ul {
-    list-style-type: none; }
-  body .nosotros .img1 {
-    width: 320px;
-    height: 550px; }
-  body .nosotros .img2 {
-    width: 320px;
-    height: 550px; }
-  body .nosotros h2 {
-    text-align: center; }
-  body .galeria {
-    width: 70vw;
-    margin-right: 15vw;
-    margin-left: 15vw; }
-  body .main {
-    background-color: gainsboro;
-    color: black; }
-  body .cont {
-    display: flex;
+
+/*------------NOSOTROS------------*/
+.nos {
+  display: flex;
+  justify-content: center; }
+
+.quienes-somos {
+  width: 320px;
+  height: 450px;
+  border: 1px solid white;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: 200; }
+
+.nos ul {
+  list-style-type: none; }
+
+.nosotros .img1 {
+  width: 320px;
+  height: 550px; }
+
+.nosotros .img2 {
+  width: 320px;
+  height: 550px; }
+
+.nosotros h2 {
+  text-align: center; }
+
+.galeria {
+  width: 70vw;
+  margin-right: 15vw;
+  margin-left: 15vw; }
+
+/*------------CONTACTOS------------*/
+.main {
+  background-color: gainsboro;
+  color: black; }
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.formulario {
+  width: 320px;
+  height: 610px;
+  border: 1px solid white;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: 200; }
+
+.preguntas {
+  text-align: center;
+  width: 50vw; }
+
+/*-------------Media Cueris---------------*/
+@media screen and (max-width: 894px) {
+  header ul {
+    flex-direction: column; } }
+
+@media screen and (max-width: 740px) {
+  header ul div {
     flex-direction: column;
-    align-items: center; }
-  body .formulario {
-    width: 320px;
-    height: 610px;
-    border: 1px solid white;
-    margin: 10px;
+    text-align: center; } }
+
+@media screen and (max-width: 1111px) {
+  footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
     text-align: center;
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    font-weight: 200; }
-  body .preguntas {
-    text-align: center;
-    width: 50vw; }
-  @media screen and (max-width: 894px) {
-    body header ul {
-      flex-direction: column; } }
-  @media screen and (max-width: 740px) {
-    body header ul div {
-      flex-direction: column;
-      text-align: center; } }
-  @media screen and (max-width: 1111px) {
-    body footer {
-      flex-direction: column; } }
-  @media screen and (max-width: 600px) {
-    body .hero h1 {
-      text-align: center;
-      font-size: 60px; } }
-  @media screen and (max-width: 600px) {
-    body .hero div a {
-      font-size: 20px; } }
-  @media screen and (max-width: 1200px) {
-    body .categorias {
-      grid-template-columns: 1fr;
-      grid-template-rows: 320px 320px 320px;
-      grid-template-areas: "cat1" "cat2" "cat3"; } }
-  @media screen and (max-width: 500px) {
-    body .categorias div a {
-      font-size: 40px; } }
-  @media screen and (max-width: 1040px) {
-    body .form {
-      flex-direction: column;
-      align-items: center; } }
-  @media screen and (max-width: 1200px) {
-    body .nos {
-      flex-direction: column;
-      align-items: center; } }
-  @media screen and (max-width: 714px) {
-    body .cont div img {
-      width: 480px; } }
-  @media screen and (max-width: 714px) {
-    body .cont div iframe {
-      width: 480px; } }
-  @media screen and (max-width: 714px) {
-    body .cont div h2 {
-      font-size: 15px; } }
-  @media screen and (max-width: 500px) {
-    body .cont div img {
-      width: 320px; } }
-  @media screen and (max-width: 500px) {
-    body .cont div iframe {
-      width: 320px; } }
-  @media screen and (max-width: 490px) {
-    body .galeria {
-      width: 95vw;
-      margin-right: 2.5vw;
-      margin-left: 2.5vw; } }
-  @media screen and (max-width: 600px) {
-    body .preguntas {
-      width: 95vw;
-      margin-right: 2.5vw;
-      margin-left: 2.5vw; } }
+    font-size: 60px; } }
+
+@media screen and (max-width: 600px) {
+  .hero div a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1200px) {
+  .categorias {
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 320px 320px;
+    grid-template-areas: "cat1" "cat2" "cat3"; } }
+
+@media screen and (max-width: 500px) {
+  .categorias div a {
+    font-size: 40px; } }
+
+@media screen and (max-width: 1040px) {
+  .form {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 1200px) {
+  .nos {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 714px) {
+  .cont div img {
+    width: 480px; } }
+
+@media screen and (max-width: 714px) {
+  .cont div iframe {
+    width: 480px; } }
+
+@media screen and (max-width: 714px) {
+  .cont div h2 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  .cont div img {
+    width: 320px; } }
+
+@media screen and (max-width: 500px) {
+  .cont div iframe {
+    width: 320px; } }
+
+@media screen and (max-width: 490px) {
+  .galeria {
+    width: 95vw;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw; } }
+
+@media screen and (max-width: 600px) {
+  .preguntas {
+    width: 95vw;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw; } }
