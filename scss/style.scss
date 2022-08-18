@@ -1,6 +1,7 @@
 @import "./base/generales";
 @import "./components/header";
 @import "./components/footer";
+@import "./base/variables.scss";
 
 body{
     margin: 0;
@@ -10,7 +11,7 @@ body{
     font-family: 'Spinnaker', sans-serif;
     
     #navbarNav ul li a:hover{
-        color: rgb(255, 174, 0);
+        color: $color-amarillo;
         font-size: 21px
     }
                                                 /*------------main------------*/
@@ -41,7 +42,7 @@ body{
                 padding: 5px;
                 border-radius: 3px;
                 &:hover{
-                    color: rgb(255, 174, 0);
+                    color: $color-amarillo;
                 }
             }
         }
@@ -137,7 +138,7 @@ body{
                     padding: 5px;
                     border-radius: 5px; 
                     &:hover {
-                        color: rgb(255, 174, 0);
+                        color: $color-amarillo;
                     }
                 }
             }
@@ -151,7 +152,7 @@ body{
         background-color: gainsboro;
         color: black;
         &:hover{
-            color: rgb(255, 174, 0);
+            color: $color-amarillo;
         }
     }
                                                 /*------------SERVICIOS------------*/
@@ -183,7 +184,7 @@ body{
         background-color: black;
         color: white;
         &:hover{
-            color: rgb(255, 174, 0);
+            color: $color-amarillo;
         }
     }
 
