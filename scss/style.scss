@@ -2,6 +2,7 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./base/variables.scss";
+@import "./base/extends.scss";
 
 body{
     margin: 0;
@@ -58,12 +59,12 @@ body{
             }
             a{
                 position: relative;
-                display: flex;
-                justify-content: center;
+                @extend %flex.center;
                 top:150px;
                 text-decoration: none;
                 color: white;
                 font-size: 60px;
+                
             }
         }
     }
@@ -108,8 +109,7 @@ body{
             text-align: center;
         }
         >div {
-            display: flex;
-            justify-content: center;
+            @extend %flex.center;
             flex-wrap: wrap;
             div{
                 width: 300px;
@@ -159,8 +159,7 @@ body{
 
     .form{
         max-width: 100%;
-        display: flex;
-        justify-content: center;
+        @extend %flex.center;
     }
     
     .datos{
@@ -190,8 +189,7 @@ body{
 
                                                 /*------------NOSOTROS------------*/
     .nos{
-        display: flex;
-        justify-content: center;
+        @extend %flex.center;
 
     }
     .quienes-somos{
@@ -231,9 +229,9 @@ body{
         background-color: gainsboro;color: black;}
     
     .cont{
-        display: flex;
+        @extend %flex.center;
         flex-direction: column;
-        align-items: center;
+        
     
         }
     .formulario{

@@ -33,6 +33,11 @@ footer {
       footer section a:hover {
         color: #ffae00; }
 
+body .categorias div a, body .productos > div, .form, .nos, .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 body {
   margin: 0;
   padding: 2px;
@@ -78,8 +83,6 @@ body {
         transform: scale(1.03); }
       body .categorias div a {
         position: relative;
-        display: flex;
-        justify-content: center;
         top: 150px;
         text-decoration: none;
         color: white;
@@ -116,8 +119,6 @@ body {
       font-weight: 900;
       text-align: center; }
     body .productos > div {
-      display: flex;
-      justify-content: center;
       flex-wrap: wrap; }
       body .productos > div div {
         width: 300px;
@@ -155,9 +156,7 @@ body {
 
 /*------------SERVICIOS------------*/
 .form {
-  max-width: 100%;
-  display: flex;
-  justify-content: center; }
+  max-width: 100%; }
 
 .datos {
   width: 320px;
@@ -183,10 +182,6 @@ body {
     color: #ffae00; }
 
 /*------------NOSOTROS------------*/
-.nos {
-  display: flex;
-  justify-content: center; }
-
 .quienes-somos {
   width: 320px;
   height: 450px;
@@ -223,9 +218,7 @@ body {
   color: black; }
 
 .cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
 
 .formulario {
   width: 320px;
