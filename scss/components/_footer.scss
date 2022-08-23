@@ -1,8 +1,9 @@
 @import "../base/variables.scss";
+@import "../base/maps";
+@import "../base/mixins";
+
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (flex, space-around, center, row);
     section{
         text-align: center;
         img{
@@ -19,5 +20,12 @@ footer{
                 color: $color-amarillo;
             }
         }
+    }
+}
+.enviar{
+    background-color: gainsboro;
+    color: black;
+    &:hover{
+        color: $color-amarillo;
     }
 }

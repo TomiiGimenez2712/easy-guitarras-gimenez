@@ -1,3 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap'); /*fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+/*fuente de google*/
 /* font-family: 'Spinnaker', sans-serif; */
+@import "../base/variables.scss";
+@import "../base/maps";
 
+.main {
+    background-color: map-get($general, bg-general);
+    color: map-get($general, color-texto);
+}
+
+/*-------------Media Cueris---------------*/
+
+@media screen and (max-width:894px) {
+    header ul {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    header ul div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:1111px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero div a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .categorias {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px 320px 320px;
+        grid-template-areas:
+            "cat1"
+            "cat2"
+            "cat3";
+    }
+}
+
+@media screen and (max-width:500px) {
+    .categorias div a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:714px) {
+    .cont div img {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width:714px) {
+    .cont div iframe {
+        width: 480px;
+
+    }
+}
+
+@media screen and (max-width:714px) {
+    .cont div h2 {
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cont div img {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cont div iframe {
+        width: 320px;
+
+    }
+}
+
+@media screen and (max-width:490px) {
+    .galeria {
+        width: 95vw;
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .preguntas {
+        width: 95vw;
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+
+
+    }
+}

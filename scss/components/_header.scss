@@ -1,12 +1,12 @@
 @import "../base/variables.scss";
+@import "../base/mixins";
 header{
     img{width:100%; height: 10vh;}
     nav{
         div{
             ul{
                 margin: 10px;
-                display: flex;
-                justify-content: space-evenly;
+                @include flex (flex, space-evenly, center, row);
                 li{
                     a{
                         color: $color-amarillo;
