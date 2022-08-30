@@ -19,6 +19,7 @@ body{
         color: $color-amarillo;
         font-size: 21px
     }
+}
                                                 /*------------HERO------------*/
     .hero{
         width: 100%; 
@@ -53,6 +54,12 @@ body{
     .categorias{
         width: 100%;
         background-color: black;
+        /*grids*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 410px;
+        grid-template-areas:
+        "cat1 cat2 cat3";
         div{
             transition: 1s;
             &:hover{
@@ -91,13 +98,6 @@ body{
         background-position: center;
     }
     /*----------------Grids------------*/
-    .categorias{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 410px;
-        grid-template-areas:
-        "cat1 cat2 cat3";
-    }
                                                 /*------------MAS VENDIDOS------------*/
     .productos{
         width: 100%;
@@ -145,5 +145,109 @@ body{
             }
         }
     }
+    /*-------------Media Cueris---------------*/
+
+
+@media screen and (max-width:1111px) {
+    footer {
+        flex-direction: column;
+    }
 }
 
+@media screen and (max-width:600px) {
+    .hero {
+        div{
+            h1{
+                text-align: center;
+                font-size: 60px;
+            }
+        }
+        div{
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .categorias{
+        
+        grid-template-columns:1fr;
+        grid-template-rows: 320px 320px 320px;
+        grid-template-areas:
+        "cat1"
+        "cat2"
+        "cat3";
+    }
+}
+
+@media screen and (max-width:500px) {
+    .categorias{
+        div{
+            a{
+                font-size: 40px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:714px) {
+    .cont{
+        div{
+            img{
+                width: 480px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .cont {
+        div{
+            img{
+                width: 320px;
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width:490px) {
+    .galeria {
+        width: 95vw;
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .preguntas {
+        width: 95vw;
+        margin-right: 2.5vw;
+        margin-left: 2.5vw;
+
+
+    }
+}
